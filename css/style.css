@@ -1,6 +1,27 @@
-.bt-login {
-    width: 6em;
-    height: 3.5em;
+body{
+    background-color: #d9d9d9;
+    background-image: url();
+}
+.menu{
+    background-color: #226825;
+    margin: auto;
+}
+.cadastro {
+    margin: auto;
     background-color: white;
-    border-radius: 35px;
+    height: 60em;
+}
+#msg {
+    display: none;
+}
+@media (max-width:768px) {
+    
+}
+@media (min-width:768px) {
+    .menu {
+        width: 80%;
+    }
+    .cadastro{
+        width: 80%;
+    }
 }
