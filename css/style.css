@@ -6,6 +6,9 @@ body{
     background-color: #226825;
     margin: auto;
 }
+.carrossel {
+    margin: auto;
+}
 .cadastro {
     margin: auto;
     background-color: white;
@@ -19,6 +22,9 @@ body{
 }
 @media (min-width:768px) {
     .menu {
+        width: 80%;
+    }
+    .carrossel{
         width: 80%;
     }
     .cadastro{
