@@ -11,8 +11,9 @@ body{
 }
 .cadastro {
     margin: auto;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     height: 60em;
+    
 }
 #msg {
     display: none;
@@ -30,4 +31,13 @@ body{
     .cadastro{
         width: 80%;
     }
+}
+.login {
+    margin-top: 5vw;
+}
+.imput {
+    border-radius: 10px;
+}
+.nav-link {
+    color: white;
 }
