@@ -46,4 +46,15 @@ body{
 }
 .sobre{
     text-align: center;
+    margin: auto;
+}
+.introdução {
+    width: 80%;
+    margin: auto;
+    background-color: #ffffff;
+}
+.cartoes {
+    background-color: #ffffff;
+    width: 80%;
+    margin: auto;
 }
