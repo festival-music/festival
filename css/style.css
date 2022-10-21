@@ -4,7 +4,7 @@ body{
 }
 .menu{
     background-color: #226825;
-    margin: auto;
+    
 }
 .carrossel {
     margin: auto;
@@ -23,13 +23,13 @@ body{
 }
 @media (min-width:768px) {
     .menu {
-        width: 80%;
+        width: 100%;
     }
     .carrossel{
-        width: 80%;
+        width: 100%;
     }
     .cadastro{
-        width: 80%;
+        width: 100%;
     }
 }
 .login {
@@ -41,20 +41,20 @@ body{
 .nav-link {
     color: white;
 }
-.text-navbar{
-    margin-left: 235px;
+.text0-nav{
+    margin-left: 500px;
 }
 .sobre{
     text-align: center;
     margin: auto;
 }
 .introdução {
-    width: 80%;
+    width: 100%;
     margin: auto;
     background-color: #ffffff;
 }
 .cartoes {
     background-color: #ffffff;
-    width: 80%;
+    width: 100%;
     margin: auto;
 }
