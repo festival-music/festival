@@ -4,13 +4,13 @@ function valuetipo(){
 
     //processamento
     if(tipo == "acrilico"){
-        valor = 10;
+        valor = 80;
     }
     else if(tipo == "antiqueda"){
-        valor = 12;
+        valor = 80;
     }
     else if(tipo == "silicone"){
-        valor = 15;
+        valor = 100;
     }
 
     //saida

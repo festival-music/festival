@@ -35,59 +35,64 @@
     </nav>
 
     <!-- TELA DE COMPRA -->
-<div class="cadastro">
+<div class="cadastro ok">
     <div class="col-8 cadastro"><br>
-        <form class="row g-3" name="form" id="form" method="post" onsubmit="return envia(this)" novalidate action="envio.html">
+        <form class="row g-3 form" name="form" id="form" method="post" onsubmit="return envia(this)" action="envio.html">
             <h1 class="text-center">Compre seu ingresso aqui</h1>
 
-            <div class="col-6">
-              <label for="inputAddress" class="form-label">Nome Completo</label>
-              <input type="text" class="form-control" id="nome" required>
-            </div>
 
-            <div class="col-md-6">
-              <label for="inputEmail4" class="form-label">E-Mail</label>
-              <input type="email" class="form-control" id="email" placeholder="Ribamar09@gmail.com" required>
+            <div class="col-md-12">
+              <label for="inputPassword4" class="form-label">Nome da Pessoa</label>
+              <input type="text" class="form-control" id="nmod" 
+              required>
             </div>
-
-            <div class="col-md-6">
-              <label for="inputPassword4" class="form-label">Senha</label>
-              <input type="password" class="form-control" name="senha" id="senha" oninput="senhas()" placeholder="******" required>
-            </div>
-
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Confirmar Senha</label>
-                <input type="password" class="form-control" name="senha2" id="senha2" oninput="senhas()" placeholder="******" required>
+            <div class="col-12">
+              <label for="">Qual dia você quer?</label>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tipo" id="acrilico" value="acrilico" onchange="valuetipo()">
+                  <label class="form-check-label" for="inlineRadio1">Dia 1</label>
               </div>
-              <p id="msg"> * As senhas não conferem </p>
-           
-          <div class="col-12 col-md-6">
-            <label for="cpf" class="form-label"> Telefone </label>
-            <input type="text" class="form-control" name="tel" id="tel" placeholder="(__)_____-____" onkeypress="mascara_tel(this)" maxlength="14" onkeyup="salto(this.name, this.value)" onkeydown="return somente_numero(event)">
-        </div>
-
-            <div class="col-12 col-md-6">
-              <label for="inputAddress2" class="form-label">Endereço</label>
-              <input type="text" class="form-control" id="endereco" placeholder="Avenida das Americas, 157" required>
-            </div>
-
-            <div class="col-md-6">
-              <label for="inputState" class="form-label">Escolha o dia em que você deseja ir</label>
-              <select id="state" class="form-select">
-                <option value="0" selected>Escolha</option>
-                <option value="1">Dia 1 - Pagode</option>
-                <option value="2">Dia 2 - Rap-Trap</option>
-                <option value="3">Dia 3 - internacional</option>
-                <option value="3">Ir no dia 1 e 2</option>
-                <option value="3">Ir no dia 2 e 3</option>
-                <option value="3">Ir no dia 1 e 3</option>
-              </select>
-            </div>  
-           
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tipo" id="antiqueda" value="antiqueda" onchange="valuetipo()">
+                  <label class="form-check-label" for="inlineRadio2">Dia 2</label>
+              </div>
+              <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="tipo" id="silicone" value="silicone" onchange="valuetipo()">
+                  <label class="form-check-label" for="inlineRadio3">Dia 3</label>
+              </div> <br><br>
+          <div class="col-6">
+              <label for="opcionais" class="form-label">Opcionais</label>
+          </div>
+          </div>
+          <div class="col-6">
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="glitter" onchange="valuea(40,this.checked)">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    VIP
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="name" onchange="valuea(20,this.checked)">
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Oppen-Bar
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="numero" onchange="valuea(30,this.checked)"> 
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Oppen-food
+                  </label>
+                </div>
+                
+          </div>
+          <div class="col-6" id="value">
+              <p> R$ <output id="res">0</output>,00 </p>
+          </div>
+            
             
             <div class="col-12">
+                <button type="submit" class="btn btn-outline-success">Cancelar</button>
                 <button type="submit" class="btn btn-success">Comprar</button>
-                <button type="submit" class="btn btn-success">Cancelar</button>
             </div>
           </form>
     </div>

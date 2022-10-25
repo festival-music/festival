@@ -13,22 +13,27 @@ body{
     margin: auto;
     background-color: rgb(255, 255, 255);
     height: 60em;
-    
+}
+.form {
+    width: 60%;
+    margin: auto;
 }
 #msg {
     display: none;
 }
 @media (max-width:768px) {
-    
+    .form {
+        width: 100%;
+    }
 }
 @media (min-width:768px) {
     .menu {
         width: 100%;
     }
-    .carrossel{
+    .ok{
         width: 100%;
     }
-    .cadastro{
+    .carrossel{
         width: 100%;
     }
 }
