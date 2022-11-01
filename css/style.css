@@ -4,15 +4,18 @@ body{
 }
 .menu{
     background-color: #226825;
+    width: 80%;
     
 }
 .carrossel {
     margin: auto;
+    width: 80%;
 }
 .cadastro {
     margin: auto;
     background-color: rgb(255, 255, 255);
     height: 60em;
+    width: 90%;
 }
 .form {
     width: 60%;
@@ -25,16 +28,26 @@ body{
     .form {
         width: 100%;
     }
+    .menu{
+        width: 100%;
+    }
+    
+}
+@media (max-width:992px) {
+    .links {
+        margin-left: 0;
+    }
 }
 @media (min-width:768px) {
     .menu {
-        width: 100%;
+        width: 90%;
+        margin: auto;
     }
     .ok{
-        width: 100%;
+        width: 90%;
     }
     .carrossel{
-        width: 100%;
+        width: 90%;
     }
 }
 .login {
@@ -54,15 +67,35 @@ body{
     margin: auto;
 }
 .introdução {
-    width: 100%;
+    width: 90%;
     margin: auto;
     background-color: #ffffff;
 }
 .cartoes {
     background-color: #ffffff;
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 .ingresso1{
     margin-left: 30%;
 }
+.footer{
+    width: 90%;
+    margin: auto;
+    background-color: #226825;
+    padding: 0.5em;
+    height: 23em;
+}
+.gusta{
+    float: left;
+}
+.vo{
+    float: right;
+}
+.insta{
+    margin-left: 15em;
+}
+.links{
+    margin-left: 20em;
+}
+
