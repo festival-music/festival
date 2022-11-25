@@ -15,6 +15,7 @@
         <a class="navbar-brand" href="index.html">
           <img src="img/logo.png" alt="" width="50%">
         </a>
+        
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,36 +38,17 @@
     <!-- TELA DE CADASTRO -->
 <div class="cadastro">
     <div class="col-8 cadastro"><br>
-        <form class="row g-3" name="form" id="form" method="post" onsubmit="return envia(this)" novalidate action="login.html">
-            <h1 class="text-center">Faça seu Cadastro</h1>
-
-            <div class="col-6">
-              <label for="inputAddress" class="form-label">Nome Completo</label>
-              <input type="text" class="form-control" id="nome" required>
-            </div>
-            <div class="col-md-6">
+        <form class="row g-3" name="form" id="form" method="post" onsubmit="return envia(this)" novalidate action="adm/valida.php">
+            <img src="img/logo02.png" alt="">
+            <h3 class="text-center">Faça Login com seu cadastro</h3>
+            <div class="col-md-12 login">
               <label for="inputEmail4" class="form-label">E-Mail</label>
-              <input type="email" class="form-control" id="email" placeholder="Ribamar09@gmail.com" required>
+              <input type="email" class="form-control" id="email" required>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-12">
               <label for="inputPassword4" class="form-label">Senha</label>
-              <input type="password" class="form-control" name="senha" id="senha" oninput="senhas()" placeholder="******" required>
+              <input type="password" class="form-control" name="senha" id="senha" oninput="senhas()" placeholder="****" required>
             </div>
-            <div class="col-md-6">
-                <label for="inputPassword4" class="form-label">Confirmar Senha</label>
-                <input type="password" class="form-control" name="senha2" id="senha2" oninput="senhas()" placeholder="******" required>
-              </div>
-              <p id="msg"> * As senhas não conferem </p>
-           
-          <div class="col-6">
-            <label for="cpf" class="form-label"> Telefone </label>
-            <input type="text" class="form-control" name="tel" id="tel" placeholder="(__)_____-____" onkeypress="mascara_tel(this)" maxlength="14" onkeyup="salto(this.name, this.value)" onkeydown="return somente_numero(event)">
-        </div>
-            <div class="col-6">
-              <label for="inputAddress2" class="form-label">Endereço</label>
-              <input type="text" class="form-control" id="endereco" placeholder="Avenida das Americas, 157" required>
-            </div>
-            
             <div class="col-12">
                 <button type="reset" class="btn btn-success">Limpar</button>
                 <button type="submit" class="btn btn-success">Enviar</button>
@@ -77,6 +59,7 @@
             
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    
     <script src="js/script.js"></script>
   </body>
 </html>

@@ -43,21 +43,21 @@
 
             <div class="col-md-12">
               <label for="inputPassword4" class="form-label">Nome da Pessoa</label>
-              <input type="text" class="form-control" id="nmod" 
+              <input type="text" class="form-control" id="nmod" name="nome"
               required>
             </div>
             <div class="col-12">
               <label for="">Qual dia você quer?</label>
               <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="tipo" id="acrilico" value="acrilico" onchange="valuetipo()">
+                  <input class="form-check-input" type="radio" name="dia" id="acrilico" value="acrilico" onchange="valuetipo()">
                   <label class="form-check-label" for="inlineRadio1">Dia 1</label>
               </div>
               <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="tipo" id="antiqueda" value="antiqueda" onchange="valuetipo()">
+                  <input class="form-check-input" type="radio" name="dia" id="antiqueda" value="antiqueda" onchange="valuetipo()">
                   <label class="form-check-label" for="inlineRadio2">Dia 2</label>
               </div>
               <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="tipo" id="silicone" value="silicone" onchange="valuetipo()">
+                  <input class="form-check-input" type="radio" name="dia" id="silicone" value="silicone" onchange="valuetipo()">
                   <label class="form-check-label" for="inlineRadio3">Dia 3</label>
               </div> <br><br>
           <div class="col-6">
