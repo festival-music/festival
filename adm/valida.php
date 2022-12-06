@@ -6,7 +6,7 @@
         $senha = trim($_POST['senha']);
         
         //escreve a sql
-        $sql = "select * from usuarios where login = '$login' and senha = '$senha'";
+        $sql = "select * from usuario where emailUsu = '$login' and senhaUsu = '$senha'";
         //executa a sql
         $testeLogin = mysqli_query($conexao,$sql);
         $existe = mysqli_num_rows($testeLogin);
@@ -32,7 +32,7 @@
 
 
 
-                header('location: ../comprar.php');
+                header('location: ../comprar.html');
         }
         else{
             echo "Usuário ou senha inválidos.";

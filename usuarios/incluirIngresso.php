@@ -7,15 +7,15 @@
         $dia = $_POST['dia'];
 
         //comunicação
-        $sql = "insert into usuarios(emailUsu,senhaUsu,nomeUsu,cpfUsu,telefoneUsu,endeUsu) values('$email','$senha','$nome','$cpf','$telefone','$end')";
+        $sql = "insert into ingresso(nomeIngresso,diaIngresso) values('$nome','$dia')";
         $incluir = mysqli_query($conexao, $sql);
 
         //saida
         if($incluir){
             echo "
                 <script>
-                    alert('Usuário cadastrado com sucesso');
-                    window.location = '../perfil.html';
+                    alert('Seu ingresso foi comprado com sucesso!');
+                    window.location = '../index.html';
                 </script>
 
             ";
@@ -28,7 +28,7 @@
     } else {
         echo "
             <p> Esta é uma pagina de tratamento de dados</p>
-            <p> Clique <a href='formularioUsuario.php'>aqui</a> para incluir um usuario </p>
+            <p> Clique <a href='comprar.html'>aqui</a> para comprar um ingresso </p>
         ";
     }
 

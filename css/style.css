@@ -30,11 +30,7 @@ body{
     }
     
 }
-@media (max-width:992px) {
-    .links {
-        margin-left: 0;
-    }
-}
+
 @media (min-width:768px) {
     .menu {
         margin: auto;
@@ -85,7 +81,7 @@ body{
 }
 @media (min-width:992px) {
 .links{
-    margin-left: 45em;
+    margin-left: 500px;
 }
 
 }

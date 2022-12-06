@@ -1,15 +1,15 @@
 function valuetipo(){
     //entrada
-    let tipo = document.form.tipo.value;
+    let tipo = document.form.dia.value;
 
     //processamento
-    if(tipo == "acrilico"){
+    if(tipo == "dia 1"){
         valor = 80;
     }
-    else if(tipo == "antiqueda"){
+    else if(tipo == "dia 2"){
         valor = 80;
     }
-    else if(tipo == "silicone"){
+    else if(tipo == "dia 3"){
         valor = 100;
     }
 

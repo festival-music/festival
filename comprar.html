@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -37,7 +37,7 @@
     <!-- TELA DE COMPRA -->
 <div class="cadastro ok">
     <div class="col-8 cadastro"><br>
-        <form class="row g-3 form" name="form" id="form" method="post" onsubmit="return envia(this)" action="envio.html">
+        <form class="row g-3 form" name="form" id="form" method="post" onsubmit="return envia(this)" action="usuarios/incluirIngresso.php">
             <h1 class="text-center">Compre seu ingresso aqui</h1>
 
 
@@ -49,15 +49,15 @@
             <div class="col-12">
               <label for="">Qual dia você quer?</label>
               <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="dia" id="acrilico" value="acrilico" onchange="valuetipo()">
+                  <input class="form-check-input" type="radio" name="dia" id="acrilico" value="dia 1" onchange="valuetipo()">
                   <label class="form-check-label" for="inlineRadio1">Dia 1</label>
               </div>
               <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="dia" id="antiqueda" value="antiqueda" onchange="valuetipo()">
+                  <input class="form-check-input" type="radio" name="dia" id="antiqueda" value="dia 2" onchange="valuetipo()">
                   <label class="form-check-label" for="inlineRadio2">Dia 2</label>
               </div>
               <div class="form-check form-check-inline">
-                  <input class="form-check-input" type="radio" name="dia" id="silicone" value="silicone" onchange="valuetipo()">
+                  <input class="form-check-input" type="radio" name="dia" id="silicone" value="dia 3" onchange="valuetipo()">
                   <label class="form-check-label" for="inlineRadio3">Dia 3</label>
               </div> <br><br>
           <div class="col-6">
@@ -86,7 +86,7 @@
                 
           </div>
           <div class="col-6" id="value">
-              <p> R$ <output id="res">0</output>,00 </p>
+              <p> R$ <output name="valor" id="res">0</output>,00 </p>
           </div>
             
             
